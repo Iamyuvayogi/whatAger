@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="logo.jpg" type="image/x-icon">
+    <title>whatAger - Age Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="heading">
+          <a href="index.html">
+            <h4>what<span class="ager">Ager</span></h4>
+
+        </a>
+        <span class="sub">Find Your Age Today!</span>
+      </div>
+      <div class="input_divison">
+        <input
+          type="text"
+          name="date"
+          id="date"
+          placeholder="dd"
+          required
+          minlength="1"
+          maxlength="2"
+          autocomplete="off"
+        />
+
+        <input
+          type="text"
+          name="month"
+          id="month"
+          placeholder="mm"
+          required
+          minlength="1"
+          maxlength="2"
+          autocomplete="off"
+        />
+
+        <input
+          type="text"
+          name="year"
+          id="year"
+          placeholder="yyyy"
+          required
+          minlength="1"
+          maxlength="4"
+          autocomplete="off"
+        />
+      </div>
+      <span>Enter Your Date Of Birth</span>
+
+      <div class="btn">
+        <button name="submit" value="submit" onclick="age()">Calculate</button>
+      </div>
+      <div class="res">
+        <p id="age"></p>
+      </div>
+    </div>
+    <span class="dev"><a href="">Develop By - Yuvayogi</a></span>
+
+    <script src="script.js"></script>
+  </body>
+</html>
